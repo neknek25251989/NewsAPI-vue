@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <Menu></Menu>
-        <news-list :news="news"></news-list>
+        <news-list v-bind:news="news"></news-list>
     </div>
 </template>
 
@@ -26,10 +26,9 @@
                     params: {
                         country: 'us',
                         apiKey: '357af6ad6bcb4fdf8945b9c5f1b8d3d1',
-                        category: 'science'
                     }
                 })
-                .then(response => this.info = response.data.articles)
+                .then(response => this.news = response.data.articles)
                 .catch(function(error) {
                     console.log(error);
                 });
