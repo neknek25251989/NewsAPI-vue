@@ -1,10 +1,14 @@
 # news-api-vue
 
-> A Vue.js project
+An US news reader.
+
+News category could be change.
+
+[NewsAPI](https://newsapi.org/)
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
@@ -15,4 +19,6 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Use `vue`, `vue-cli`, `BootstrapVue`, `axios`
+
+Practice `props`, `$emit`, `$on`
